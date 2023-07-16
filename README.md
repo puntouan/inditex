@@ -12,12 +12,12 @@ The 5 tests mentioned in the test description are programmed as end-to-end tests
 in the class __*com.challenge.inditex.product.GetProductRateByDateShould.*__
 
 These 5 tests, along with the rest of the tests that provide coverage to the code, can be executed 
-with(__it requires java 17__):
+with (__it requires java 17__):
 ```
 ./gradlew test
 ```
 ### Execution
-The application can be started with:
+The application can be started with (__it requires java 17__):
 ```
 ./gradlew bootRun
 ```
