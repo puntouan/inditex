@@ -1,5 +1,6 @@
 package com.challenge.inditex.product.application
 
+import com.challenge.inditex.product.domain.IGetProductRateByDate
 import com.challenge.inditex.product.domain.ProductRate
 import com.challenge.inditex.product.domain.ProductRateRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -9,9 +10,9 @@ import java.time.LocalDateTime
 @Service
 class GetProductRateByDate(
     @Autowired private val productRateRepository: ProductRateRepository
-) {
+) : IGetProductRateByDate {
 
-    fun execute(productId: Long, brandId: Long, date: LocalDateTime): ProductRate {
+    override fun execute(productId: Long, brandId: Long, date: LocalDateTime): ProductRate {
 
         return productRateRepository
             .getProductRatesOnDate(productId, brandId, date)

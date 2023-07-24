@@ -1,4 +1,4 @@
-package com.challenge.inditex.product.infrastructure
+package com.challenge.inditex.product.infrastructure.rest
 
 import com.challenge.inditex.product.application.MissingProductRateOnDateException
 import org.springframework.http.HttpStatus

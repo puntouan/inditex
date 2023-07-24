@@ -1,4 +1,4 @@
-package com.challenge.inditex.product.infrastructure
+package com.challenge.inditex.product.infrastructure.persistence
 
 import com.challenge.inditex.product.domain.*
 import org.springframework.beans.factory.annotation.Autowired

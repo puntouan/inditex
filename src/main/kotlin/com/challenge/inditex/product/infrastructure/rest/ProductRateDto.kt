@@ -1,4 +1,4 @@
-package com.challenge.inditex.product.infrastructure
+package com.challenge.inditex.product.infrastructure.rest
 
 import com.challenge.inditex.product.domain.MonetaryAmount
 import com.challenge.inditex.product.domain.ProductRate
@@ -20,7 +20,7 @@ class ProductRateDtoMapper(
     @Autowired val monetaryAmountMapper: MonetaryAmountDtoMapper
 ){
 
-    fun mapFromDomainToDto(productRate: ProductRate): ProductRateDto{
+    fun mapFromDomainToDto(productRate: ProductRate): ProductRateDto {
         return ProductRateDto(
             brandId = productRate.brandId,
             productId = productRate.productId,
